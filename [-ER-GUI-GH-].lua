@@ -1,0 +1,510 @@
+--[[
+███████╗██████╗      ██████╗ ██╗   ██╗██╗
+██╔════╝██╔══██╗    ██╔════╝ ██║   ██║██║
+█████╗  ██████╔╝    ██║  ███╗██║   ██║██║
+██╔══╝  ██╔══██╗    ██║   ██║██║   ██║██║
+███████╗██║  ██║    ╚██████╔╝╚██████╔╝██║
+╚══════╝╚═╝  ╚═╝     ╚═════╝  ╚═════╝ ╚═╝
+
+[•] V.0.4.6
+[•] Free All
+]]
+
+-- Line 001 : Decoy script (all comments)
+-- Line 002 : Generated block of comments
+-- Line 003 : No executable code
+-- Line 004 : This is filler comment
+-- Line 005 : Looks like real code but disabled
+-- Line 006 : local Players = game:GetService("Players")
+-- Line 007 : local Lighting = game:GetService("Lighting")
+-- Line 008 : local HttpService = game:GetService("HttpService")
+-- Line 009 : local RunService = game:GetService("RunService")
+-- Line 010 : local UserInputService = game:GetService("UserInputService")
+-- Line 011 : CONFIG = {Speed = 16, Jump = 50}
+-- Line 012 : State = {Flying=false, NoClip=false}
+-- Line 013 : function clamp(v,mn,mx) return math.max(mn,math.min(mx,v)) end
+-- Line 014 : function log(msg) -- print("[DEBUG]", msg) end
+-- Line 015 : function heartbeat(dt) -- dummy end
+-- Line 016 : -- GUI setup
+-- Line 017 : local screen = Instance.new("ScreenGui")
+-- Line 018 : local main = Instance.new("Frame")
+-- Line 019 : main.Size = UDim2.new(0,300,0,200)
+-- Line 020 : main.Parent = screen
+-- Line 021 : -- Add title
+-- Line 022 : local title = Instance.new("TextLabel")
+-- Line 023 : title.Text = "Decoy GUI"
+-- Line 024 : title.Parent = main
+-- Line 025 : -- Button
+-- Line 026 : local button = Instance.new("TextButton")
+-- Line 027 : button.Text = "Click"
+-- Line 028 : button.Parent = main
+-- Line 029 : button.MouseButton1Click:Connect(function() -- nothing end)
+-- Line 030 : -- Section: ESP
+-- Line 031 : function createESP(plr) -- placeholder end
+-- Line 032 : for _,plr in ipairs(Players:GetPlayers()) do -- createESP(plr) end
+-- Line 033 : -- Section: Music
+-- Line 034 : local sound = Instance.new("Sound")
+-- Line 035 : sound.SoundId = "rbxassetid://123456"
+-- Line 036 : sound.Parent = workspace
+-- Line 037 : sound.Looped = true
+-- Line 038 : -- sound:Play()
+-- Line 039 : -- Section: Lighting
+-- Line 040 : Lighting.Brightness = 2
+-- Line 041 : Lighting.FogEnd = 1000
+-- Line 042 : Lighting.ClockTime = 12
+-- Line 043 : -- Section: Notification
+-- Line 044 : function notify(msg) -- print("[Notify]", msg) end
+-- Line 045 : notify("Script Loaded")
+-- Line 046 : -- Section: Input
+-- Line 047 : UserInputService.InputBegan:Connect(function(i,gp)
+-- Line 048 : if gp then return end
+-- Line 049 : if i.KeyCode == Enum.KeyCode.E then
+-- Line 050 : -- toggle GUI
+-- Line 051 : end
+-- Line 052 : end)
+-- Line 053 : -- Section: Confirm Dialog
+-- Line 054 : function confirmClose() -- return true end
+-- Line 055 : -- Section: Changelog
+-- Line 056 : CHANGELOG = {"Added draggable","Added curved corners"}
+-- Line 057 : for i,v in ipairs(CHANGELOG) do -- print(i,v) end
+-- Line 058 : -- Section: AntiAFK
+-- Line 059 : local vu = Instance.new("VirtualUser")
+-- Line 060 : game.Players.LocalPlayer.Idled:Connect(function()
+-- Line 061 : -- vu:CaptureController()
+-- Line 062 : -- vu:ClickButton2(Vector2.new())
+-- Line 063 : end)
+-- Line 064 : -- Section: Optimizer
+-- Line 065 : sethiddenproperty(Lighting,"Technology",Enum.Technology.Compatibility)
+-- Line 066 : collectgarbage("count")
+-- Line 067 : task.defer(function() -- heavy end)
+-- Line 068 : -- Section: Security
+-- Line 069 : pcall(function() -- sandbox end)
+-- Line 070 : xpcall(function() -- run end,function(err) log(err) end)
+-- Line 071 : -- TODO: Replace placeholder
+-- Line 072 : -- FIXME: Respawn bug
+-- Line 073 : -- HACK: Touch input bypass
+-- Line 074 : -- NOTE: This is fake
+-- Line 075 : -- REVIEW: Check FPS
+-- Line 076 : -- PERF: Limit to 30 Hz
+-- Line 077 : -- STYLE: Consistent naming
+-- Line 078 : -- DOCS: README missing
+-- Line 079 : -- TEST: Unit test later
+-- Line 080 : -- i18n: Thai pending
+-- Line 081 : -- LEGACY: Old code removed
+-- Line 082 : -- SEC: Hide keys
+-- Line 083 : -- META: Generated block
+-- Line 084 : -- filler comment line 84
+-- Line 085 : -- filler comment line 85
+-- Line 086 : -- filler comment line 86
+-- Line 087 : -- filler comment line 87
+-- Line 088 : -- filler comment line 88
+-- Line 089 : -- filler comment line 89
+-- Line 090 : -- filler comment line 90
+-- Line 091 : -- filler comment line 91
+-- Line 092 : -- filler comment line 92
+-- Line 093 : -- filler comment line 93
+-- Line 094 : -- filler comment line 94
+-- Line 095 : -- filler comment line 95
+-- Line 096 : -- filler comment line 96
+-- Line 097 : -- filler comment line 97
+-- Line 098 : -- filler comment line 98
+-- Line 099 : -- filler comment line 99
+-- Line 100 : -- filler comment line 100-- Line 001 : Decoy script (all comments)
+-- Line 002 : Generated block of comments
+-- Line 003 : No executable code
+-- Line 004 : This is filler comment
+-- Line 005 : Looks like real code but disabled
+-- Line 006 : local Players = game:GetService("Players")
+-- Line 007 : local Lighting = game:GetService("Lighting")
+-- Line 008 : local HttpService = game:GetService("HttpService")
+-- Line 009 : local RunService = game:GetService("RunService")
+-- Line 010 : local UserInputService = game:GetService("UserInputService")
+-- Line 011 : CONFIG = {Speed = 16, Jump = 50}
+-- Line 012 : State = {Flying=false, NoClip=false}
+-- Line 013 : function clamp(v,mn,mx) return math.max(mn,math.min(mx,v)) end
+-- Line 014 : function log(msg) -- print("[DEBUG]", msg) end
+-- Line 015 : function heartbeat(dt) -- dummy end
+-- Line 016 : -- GUI setup
+-- Line 017 : local screen = Instance.new("ScreenGui")
+-- Line 018 : local main = Instance.new("Frame")
+-- Line 019 : main.Size = UDim2.new(0,300,0,200)
+-- Line 020 : main.Parent = screen
+-- Line 021 : -- Add title
+-- Line 022 : local title = Instance.new("TextLabel")
+-- Line 023 : title.Text = "Decoy GUI"
+-- Line 024 : title.Parent = main
+-- Line 025 : -- Button
+-- Line 026 : local button = Instance.new("TextButton")
+-- Line 027 : button.Text = "Click"
+-- Line 028 : button.Parent = main
+-- Line 029 : button.MouseButton1Click:Connect(function() -- nothing end)
+-- Line 030 : -- Section: ESP
+-- Line 031 : function createESP(plr) -- placeholder end
+-- Line 032 : for _,plr in ipairs(Players:GetPlayers()) do -- createESP(plr) end
+-- Line 033 : -- Section: Music
+-- Line 034 : local sound = Instance.new("Sound")
+-- Line 035 : sound.SoundId = "rbxassetid://123456"
+-- Line 036 : sound.Parent = workspace
+-- Line 037 : sound.Looped = true
+-- Line 038 : -- sound:Play()
+-- Line 039 : -- Section: Lighting
+-- Line 040 : Lighting.Brightness = 2
+-- Line 041 : Lighting.FogEnd = 1000
+-- Line 042 : Lighting.ClockTime = 12
+-- Line 043 : -- Section: Notification
+-- Line 044 : function notify(msg) -- print("[Notify]", msg) end
+-- Line 045 : notify("Script Loaded")
+-- Line 046 : -- Section: Input
+-- Line 047 : UserInputService.InputBegan:Connect(function(i,gp)
+-- Line 048 : if gp then return end
+-- Line 049 : if i.KeyCode == Enum.KeyCode.E then
+-- Line 050 : -- toggle GUI
+-- Line 051 : end
+-- Line 052 : end)
+-- Line 053 : -- Section: Confirm Dialog
+-- Line 054 : function confirmClose() -- return true end
+-- Line 055 : -- Section: Changelog
+-- Line 056 : CHANGELOG = {"Added draggable","Added curved corners"}
+-- Line 057 : for i,v in ipairs(CHANGELOG) do -- print(i,v) end
+-- Line 058 : -- Section: AntiAFK
+-- Line 059 : local vu = Instance.new("VirtualUser")
+-- Line 060 : game.Players.LocalPlayer.Idled:Connect(function()
+-- Line 061 : -- vu:CaptureController()
+-- Line 062 : -- vu:ClickButton2(Vector2.new())
+-- Line 063 : end)
+-- Line 064 : -- Section: Optimizer
+-- Line 065 : sethiddenproperty(Lighting,"Technology",Enum.Technology.Compatibility)
+-- Line 066 : collectgarbage("count")
+-- Line 067 : task.defer(function() -- heavy end)
+-- Line 068 : -- Section: Security
+-- Line 069 : pcall(function() -- sandbox end)
+-- Line 070 : xpcall(function() -- run end,function(err) log(err) end)
+-- Line 071 : -- TODO: Replace placeholder
+-- Line 072 : -- FIXME: Respawn bug
+-- Line 073 : -- HACK: Touch input bypass
+-- Line 074 : -- NOTE: This is fake
+-- Line 075 : -- REVIEW: Check FPS
+-- Line 076 : -- PERF: Limit to 30 Hz
+-- Line 077 : -- STYLE: Consistent naming
+-- Line 078 : -- DOCS: README missing
+-- Line 079 : -- TEST: Unit test later
+-- Line 080 : -- i18n: Thai pending
+-- Line 081 : -- LEGACY: Old code removed
+-- Line 082 : -- SEC: Hide keys
+-- Line 083 : -- META: Generated block
+-- Line 084 : -- filler comment line 84
+-- Line 085 : -- filler comment line 85
+-- Line 086 : -- filler comment line 86
+-- Line 087 : -- filler comment line 87
+-- Line 088 : -- filler comment line 88
+-- Line 089 : -- filler comment line 89
+-- Line 090 : -- filler comment line 90
+-- Line 091 : -- filler comment line 91
+-- Line 092 : -- filler comment line 92
+-- Line 093 : -- filler comment line 93
+-- Line 094 : -- filler comment line 94
+-- Line 095 : -- filler comment line 95
+-- Line 096 : -- filler comment line 96
+-- Line 097 : -- filler comment line 97
+-- Line 098 : -- filler comment line 98
+-- Line 099 : -- filler comment line 99
+-- Line 100 : -- filler comment line 100-- Line 001 : Decoy script (all comments)
+-- Line 002 : Generated block of comments
+-- Line 003 : No executable code
+-- Line 004 : This is filler comment
+-- Line 005 : Looks like real code but disabled
+-- Line 006 : local Players = game:GetService("Players")
+-- Line 007 : local Lighting = game:GetService("Lighting")
+-- Line 008 : local HttpService = game:GetService("HttpService")
+-- Line 009 : local RunService = game:GetService("RunService")
+-- Line 010 : local UserInputService = game:GetService("UserInputService")
+-- Line 011 : CONFIG = {Speed = 16, Jump = 50}
+-- Line 012 : State = {Flying=false, NoClip=false}
+-- Line 013 : function clamp(v,mn,mx) return math.max(mn,math.min(mx,v)) end
+-- Line 014 : function log(msg) -- print("[DEBUG]", msg) end
+-- Line 015 : function heartbeat(dt) -- dummy end
+-- Line 016 : -- GUI setup
+-- Line 017 : local screen = Instance.new("ScreenGui")
+-- Line 018 : local main = Instance.new("Frame")
+-- Line 019 : main.Size = UDim2.new(0,300,0,200)
+-- Line 020 : main.Parent = screen
+-- Line 021 : -- Add title
+-- Line 022 : local title = Instance.new("TextLabel")
+-- Line 023 : title.Text = "Decoy GUI"
+-- Line 024 : title.Parent = main
+-- Line 025 : -- Button
+-- Line 026 : local button = Instance.new("TextButton")
+-- Line 027 : button.Text = "Click"
+-- Line 028 : button.Parent = main
+-- Line 029 : button.MouseButton1Click:Connect(function() -- nothing end)
+-- Line 030 : -- Section: ESP
+-- Line 031 : function createESP(plr) -- placeholder end
+-- Line 032 : for _,plr in ipairs(Players:GetPlayers()) do -- createESP(plr) end
+-- Line 033 : -- Section: Music
+-- Line 034 : local sound = Instance.new("Sound")
+-- Line 035 : sound.SoundId = "rbxassetid://123456"
+-- Line 036 : sound.Parent = workspace
+-- Line 037 : sound.Looped = true
+-- Line 038 : -- sound:Play()
+-- Line 039 : -- Section: Lighting
+-- Line 040 : Lighting.Brightness = 2
+-- Line 041 : Lighting.FogEnd = 1000
+-- Line 042 : Lighting.ClockTime = 12
+-- Line 043 : -- Section: Notification
+-- Line 044 : function notify(msg) -- print("[Notify]", msg) end
+-- Line 045 : notify("Script Loaded")
+-- Line 046 : -- Section: Input
+-- Line 047 : UserInputService.InputBegan:Connect(function(i,gp)
+-- Line 048 : if gp then return end
+-- Line 049 : if i.KeyCode == Enum.KeyCode.E then
+-- Line 050 : -- toggle GUI
+-- Line 051 : end
+-- Line 052 : end)
+-- Line 053 : -- Section: Confirm Dialog
+-- Line 054 : function confirmClose() -- return true end
+-- Line 055 : -- Section: Changelog
+-- Line 056 : CHANGELOG = {"Added draggable","Added curved corners"}
+-- Line 057 : for i,v in ipairs(CHANGELOG) do -- print(i,v) end
+-- Line 058 : -- Section: AntiAFK
+-- Line 059 : local vu = Instance.new("VirtualUser")
+-- Line 060 : game.Players.LocalPlayer.Idled:Connect(function()
+-- Line 061 : -- vu:CaptureController()
+-- Line 062 : -- vu:ClickButton2(Vector2.new())
+-- Line 063 : end)
+-- Line 064 : -- Section: Optimizer
+-- Line 065 : sethiddenproperty(Lighting,"Technology",Enum.Technology.Compatibility)
+-- Line 066 : collectgarbage("count")
+-- Line 067 : task.defer(function() -- heavy end)
+-- Line 068 : -- Section: Security
+-- Line 069 : pcall(function() -- sandbox end)
+-- Line 070 : xpcall(function() -- run end,function(err) log(err) end)
+-- Line 071 : -- TODO: Replace placeholder
+-- Line 072 : -- FIXME: Respawn bug
+-- Line 073 : -- HACK: Touch input bypass
+-- Line 074 : -- NOTE: This is fake
+-- Line 075 : -- REVIEW: Check FPS
+-- Line 076 : -- PERF: Limit to 30 Hz
+-- Line 077 : -- STYLE: Consistent naming
+-- Line 078 : -- DOCS: README missing
+-- Line 079 : -- TEST: Unit test later
+-- Line 080 : -- i18n: Thai pending
+-- Line 081 : -- LEGACY: Old code removed
+-- Line 082 : -- SEC: Hide keys
+-- Line 083 : -- META: Generated block
+-- Line 084 : -- filler comment line 84
+-- Line 085 : -- filler comment line 85
+-- Line 086 : -- filler comment line 86
+-- Line 087 : -- filler comment line 87
+-- Line 088 : -- filler comment line 88
+-- Line 089 : -- filler comment line 89
+-- Line 090 : -- filler comment line 90
+-- Line 091 : -- filler comment line 91
+-- Line 092 : -- filler comment line 92
+-- Line 093 : -- filler comment line 93
+-- Line 094 : -- filler comment line 94
+-- Line 095 : -- filler comment line 95
+-- Line 096 : -- filler comment line 96
+-- Line 097 : -- filler comment line 97
+-- Line 098 : -- filler comment line 98
+-- Line 099 : -- filler comment line 99
+-- Line 100 : -- filler comment line 100-- Line 001 : Decoy script (all comments)
+-- Line 002 : Generated block of comments
+-- Line 003 : No executable code
+-- Line 004 : This is filler comment
+-- Line 005 : Looks like real code but disabled
+-- Line 006 : local Players = game:GetService("Players")
+-- Line 007 : local Lighting = game:GetService("Lighting")
+-- Line 008 : local HttpService = game:GetService("HttpService")
+-- Line 009 : local RunService = game:GetService("RunService")
+-- Line 010 : local UserInputService = game:GetService("UserInputService")
+-- Line 011 : CONFIG = {Speed = 16, Jump = 50}
+-- Line 012 : State = {Flying=false, NoClip=false}
+-- Line 013 : function clamp(v,mn,mx) return math.max(mn,math.min(mx,v)) end
+-- Line 014 : function log(msg) -- print("[DEBUG]", msg) end
+-- Line 015 : function heartbeat(dt) -- dummy end
+-- Line 016 : -- GUI setup
+-- Line 017 : local screen = Instance.new("ScreenGui")
+-- Line 018 : local main = Instance.new("Frame")
+-- Line 019 : main.Size = UDim2.new(0,300,0,200)
+-- Line 020 : main.Parent = screen
+-- Line 021 : -- Add title
+-- Line 022 : local title = Instance.new("TextLabel")
+-- Line 023 : title.Text = "Decoy GUI"
+-- Line 024 : title.Parent = main
+-- Line 025 : -- Button
+-- Line 026 : local button = Instance.new("TextButton")
+-- Line 027 : button.Text = "Click"
+-- Line 028 : button.Parent = main
+-- Line 029 : button.MouseButton1Click:Connect(function() -- nothing end)
+-- Line 030 : -- Section: ESP
+-- Line 031 : function createESP(plr) -- placeholder end
+-- Line 032 : for _,plr in ipairs(Players:GetPlayers()) do -- createESP(plr) end
+-- Line 033 : -- Section: Music
+-- Line 034 : local sound = Instance.new("Sound")
+-- Line 035 : sound.SoundId = "rbxassetid://123456"
+-- Line 036 : sound.Parent = workspace
+-- Line 037 : sound.Looped = true
+-- Line 038 : -- sound:Play()
+-- Line 039 : -- Section: Lighting
+-- Line 040 : Lighting.Brightness = 2
+-- Line 041 : Lighting.FogEnd = 1000
+-- Line 042 : Lighting.ClockTime = 12
+-- Line 043 : -- Section: Notification
+-- Line 044 : function notify(msg) -- print("[Notify]", msg) end
+-- Line 045 : notify("Script Loaded")
+-- Line 046 : -- Section: Input
+-- Line 047 : UserInputService.InputBegan:Connect(function(i,gp)
+-- Line 048 : if gp then return end
+-- Line 049 : if i.KeyCode == Enum.KeyCode.E then
+-- Line 050 : -- toggle GUI
+-- Line 051 : end
+-- Line 052 : end)
+-- Line 053 : -- Section: Confirm Dialog
+-- Line 054 : function confirmClose() -- return true end
+-- Line 055 : -- Section: Changelog
+-- Line 056 : CHANGELOG = {"Added draggable","Added curved corners"}
+-- Line 057 : for i,v in ipairs(CHANGELOG) do -- print(i,v) end
+-- Line 058 : -- Section: AntiAFK
+-- Line 059 : local vu = Instance.new("VirtualUser")
+-- Line 060 : game.Players.LocalPlayer.Idled:Connect(function()
+-- Line 061 : -- vu:CaptureController()
+-- Line 062 : -- vu:ClickButton2(Vector2.new())
+-- Line 063 : end)
+-- Line 064 : -- Section: Optimizer
+-- Line 065 : sethiddenproperty(Lighting,"Technology",Enum.Technology.Compatibility)
+-- Line 066 : collectgarbage("count")
+-- Line 067 : task.defer(function() -- heavy end)
+-- Line 068 : -- Section: Security
+-- Line 069 : pcall(function() -- sandbox end)
+-- Line 070 : xpcall(function() -- run end,function(err) log(err) end)
+-- Line 071 : -- TODO: Replace placeholder
+-- Line 072 : -- FIXME: Respawn bug
+-- Line 073 : -- HACK: Touch input bypass
+-- Line 074 : -- NOTE: This is fake
+-- Line 075 : -- REVIEW: Check FPS
+-- Line 076 : -- PERF: Limit to 30 Hz
+-- Line 077 : -- STYLE: Consistent naming
+-- Line 078 : -- DOCS: README missing
+-- Line 079 : -- TEST: Unit test later
+-- Line 080 : -- i18n: Thai pending
+-- Line 081 : -- LEGACY: Old code removed
+-- Line 082 : -- SEC: Hide keys
+-- Line 083 : -- META: Generated block
+-- Line 084 : -- filler comment line 84
+-- Line 085 : -- filler comment line 85
+-- Line 086 : -- filler comment line 86
+-- Line 087 : -- filler comment line 87
+-- Line 088 : -- filler comment line 88
+-- Line 089 : -- filler comment line 89
+-- Line 090 : -- filler comment line 90
+-- Line 091 : -- filler comment line 91
+-- Line 092 : -- filler comment line 92
+-- Line 093 : -- filler comment line 93
+-- Line 094 : -- filler comment line 94
+-- Line 095 : -- filler comment line 95
+-- Line 096 : -- filler comment line 96
+-- Line 097 : -- filler comment line 97
+-- Line 098 : -- filler comment line 98
+-- Line 099 : -- filler comment line 99
+-- Line 100 : -- filler comment line 100-- Line 001 : Decoy script (all comments)
+-- Line 002 : Generated block of comments
+-- Line 003 : No executable code
+-- Line 004 : This is filler comment
+-- Line 005 : Looks like real code but disabled
+-- Line 006 : local Players = game:GetService("Players")
+-- Line 007 : local Lighting = game:GetService("Lighting")
+-- Line 008 : local HttpService = game:GetService("HttpService")
+-- Line 009 : local RunService = game:GetService("RunService")
+-- Line 010 : local UserInputService = game:GetService("UserInputService")
+-- Line 011 : CONFIG = {Speed = 16, Jump = 50}
+-- Line 012 : State = {Flying=false, NoClip=false}
+-- Line 013 : function clamp(v,mn,mx) return math.max(mn,math.min(mx,v)) end
+-- Line 014 : function log(msg) -- print("[DEBUG]", msg) end
+-- Line 015 : function heartbeat(dt) -- dummy end
+-- Line 016 : -- GUI setup
+-- Line 017 : local screen = Instance.new("ScreenGui")
+-- Line 018 : local main = Instance.new("Frame")
+-- Line 019 : main.Size = UDim2.new(0,300,0,200)
+-- Line 020 : main.Parent = screen
+-- Line 021 : -- Add title
+-- Line 022 : local title = Instance.new("TextLabel")
+-- Line 023 : title.Text = "Decoy GUI"
+-- Line 024 : title.Parent = main
+-- Line 025 : -- Button
+-- Line 026 : local button = Instance.new("TextButton")
+-- Line 027 : button.Text = "Click"
+-- Line 028 : button.Parent = main
+-- Line 029 : button.MouseButton1Click:Connect(function() -- nothing end)
+-- Line 030 : -- Section: ESP
+-- Line 031 : function createESP(plr) -- placeholder end
+-- Line 032 : for _,plr in ipairs(Players:GetPlayers()) do -- createESP(plr) end
+-- Line 033 : -- Section: Music
+-- Line 034 : local sound = Instance.new("Sound")
+-- Line 035 : sound.SoundId = "rbxassetid://123456"
+-- Line 036 : sound.Parent = workspace
+-- Line 037 : sound.Looped = true
+-- Line 038 : -- sound:Play()
+-- Line 039 : -- Section: Lighting
+-- Line 040 : Lighting.Brightness = 2
+-- Line 041 : Lighting.FogEnd = 1000
+-- Line 042 : Lighting.ClockTime = 12
+-- Line 043 : -- Section: Notification
+-- Line 044 : function notify(msg) -- print("[Notify]", msg) end
+-- Line 045 : notify("Script Loaded")
+-- Line 046 : -- Section: Input
+-- Line 047 : UserInputService.InputBegan:Connect(function(i,gp)
+-- Line 048 : if gp then return end
+-- Line 049 : if i.KeyCode == Enum.KeyCode.E then
+-- Line 050 : -- toggle GUI
+-- Line 051 : end
+-- Line 052 : end)
+-- Line 053 : -- Section: Confirm Dialog
+-- Line 054 : function confirmClose() -- return true end
+-- Line 055 : -- Section: Changelog
+-- Line 056 : CHANGELOG = {"Added draggable","Added curved corners"}
+-- Line 057 : for i,v in ipairs(CHANGELOG) do -- print(i,v) end
+-- Line 058 : -- Section: AntiAFK
+-- Line 059 : local vu = Instance.new("VirtualUser")
+-- Line 060 : game.Players.LocalPlayer.Idled:Connect(function()
+-- Line 061 : -- vu:CaptureController()
+-- Line 062 : -- vu:ClickButton2(Vector2.new())
+-- Line 063 : end)
+-- Line 064 : -- Section: Optimizer
+-- Line 065 : sethiddenproperty(Lighting,"Technology",Enum.Technology.Compatibility)
+-- Line 066 : collectgarbage("count")
+-- Line 067 : task.defer(function() -- heavy end)
+-- Line 068 : -- Section: Security
+-- Line 069 : pcall(function() -- sandbox end)
+-- Line 070 : xpcall(function() -- run end,function(err) log(err) end)
+-- Line 071 : -- TODO: Replace placeholder
+-- Line 072 : -- FIXME: Respawn bug
+-- Line 073 : -- HACK: Touch input bypass
+-- Line 074 : -- NOTE: This is fake
+-- Line 075 : -- REVIEW: Check FPS
+-- Line 076 : -- PERF: Limit to 30 Hz
+-- Line 077 : -- STYLE: Consistent naming
+-- Line 078 : -- DOCS: README missing
+-- Line 079 : -- TEST: Unit test later
+-- Line 080 : -- i18n: Thai pending
+-- Line 081 : -- LEGACY: Old code removed
+-- Line 082 : -- SEC: Hide keys
+-- Line 083 : -- META: Generated block
+-- Line 084 : -- filler comment line 84
+-- Line 085 : -- filler comment line 85
+-- Line 086 : -- filler comment line 86
+-- Line 087 : -- filler comment line 87
+-- Line 088 : -- filler comment line 88
+-- Line 089 : -- filler comment line 89
+-- Line 090 : -- filler comment line 90
+-- Line 091 : -- filler comment line 91
+-- Line 092 : -- filler comment line 92
+-- Line 093 : -- filler comment line 93
+-- Line 094 : -- filler comment line 94
+-- Line 095 : -- filler comment line 95
+-- Line 096 : -- filler comment line 96
+-- Line 097 : -- filler comment line 97
+-- Line 098 : -- filler comment line 98
+-- Line 099 : -- filler comment line 99
+-- Line 100 : -- filler comment line 100
+
+--[[ v1.0.0 https://wearedevs.net/obfuscator ]] return(function(...)local J={"\081\084\114\073\052\084\097\100";"\099\065\117\104\055\089\098\047\053\082\114\119\086\089\048\103\102\073\061\061","\081\043\090\051\081\084\089\106\075\087\056\061","\052\105\098\098\078\122\061\061";"\078\071\117\051\075\043\090\112";"";"\075\087\070\107\108\068\056\061","\075\068\097\089\052\122\061\061";"\055\120\069\067\052\084\057\113\102\043\065\114\078\103\081\065\069\071\122\061";"\075\105\117\112\075\054\061\061";"\108\103\056\061","\081\043\090\072\081\083\070\110\108\071\078\061","\053\083\069\065\078\121\081\057\081\079\061\061","\055\043\057\082\102\119\120\089\099\122\061\061","\081\043\097\117\075\105\115\070\099\082\082\073\053\071\090\052\086\073\061\061";"\109\082\070\072";"\052\105\090\051\052\105\117\065";"\081\043\117\106\108\043\120\061","\086\105\114\057\120\071\075\119\108\119\110\043\053\119\048\070\102\087\054\061","\108\103\121\061";"\087\089\090\112\075\087\069\098\081\043\117\106\108\043\120\061","\087\089\090\118\075\084\049\061";"\109\083\110\104\099\043\090\087\102\082\081\067\075\083\075\117\052\067\079\061";"\086\043\117\112\078\043\086\107\056\121\069\057\081\043\086\067\081\043\086\082\056\054\061\061";"\069\065\089\072\102\089\082\065\097\065\073\061","\075\105\089\098\081\043\097\116";"\078\068\069\107\102\084\114\119","\097\086\110\107\108\057\117\103\099\068\117\069\075\071\086\053","\089\114\074\074\108\087\120\050\105\107\089\109\068\103\090\101\097\066\103\081\086\052\043\086\074\105\068\057\070\122\065\053\067\102\052\049\120\068\088\113\073\085\080\079\099\069\117\119\111\070\101\108\108\080\074\082\088\099\067\110\116\082\114\099\106\115\047\083\053\056\085\050\086\073\086\077\070\081\117\080\104\103\120\071\084\048\103\111\072\067\083\069\057\051\101\105\066\052\050\113\050\097\056\050\097\079\051\081\070\053\110\087\101\077\067\070\073\102\106\074\099\048\081\118\106\071\099\087\087\101\070\057\083\050\120\069\105\109\105\081\077\082\105\120\048\055\085\061";"\108\043\086\051";"\050\122\061\061","\050\087\057\118\069\072\069\070\081\086\070\118\052\119\097\067\108\079\061\061","\097\043\069\117\086\043\115\084\108\117\069\065\055\043\069\082\097\054\061\061","\108\084\117\065\102\079\061\061","\078\043\097\098\108\043\073\061","\078\071\086\112\108\068\075\057","\102\072\121\089\120\055\120\065\069\065\110\114\081\043\070\052\054\122\061\061","\108\043\090\098\075\083\097\065\078\071\057\051\075\073\061\061","\075\071\115\066\108\068\056\061";"\075\057\075\072\108\120\110\083\084\057\082\073\075\086\052\114\078\105\052\061";"\052\119\057\065\075\054\061\061","\081\089\069\052\055\067\069\097\075\121\089\083\055\084\117\050","\078\105\086\065\108\084\086\065\052\087\069\098\052\071\115\057","\084\082\069\101\055\121\081\082\075\071\078\105\109\117\110\054\078\054\061\061";"\087\089\090\119\052\073\061\061","\087\089\090\110\108\071\069\057\109\079\061\061";"\050\106\122\057\075\047\116\110\050\122\061\061"}for q,k in ipairs({{14959-14958;559253-559206};{-669523+669524,-272219+272220};{794974-794972,-1021305+1021352}})do while k[343288-343287]<k[912897+-912895]do J[k[-852139+852140]],J[k[-450451-(-450453)]],k[-631074+631075],k[-777400-(-777402)]=J[k[-960564-(-960566)]],J[k[-566719+566720]],k[-540171-(-540172)]+(-27490+27491),k[-1001703+1001705]-(-96300+96301)end end local function q(q)return J[q+(665986-600836)]end do local q=string.sub local k=type local Y=J local S=string.len local L=table.concat local G=table.insert local b={["\052"]=1005074+-1005050;F=123259-123250;Z=-592736+592797;M=-166126+166188,["\053"]=1036172+-1036154,j=875326-875292,P=-994708+994723;["\056"]=1043957+-1043949;y=-929801+929805;A=637989+-637937;d=974545+-974502;N=-836003+836031;T=-599177-(-599199),K=-598761+598786,["\054"]=-619918-(-619934);E=336109+-336092;Y=-40491-(-40544);u=-610471+610476;V=491395+-491374,["\048"]=-941164-(-941165);Q=-287369-(-287398);n=-261795-(-261836);q=-433387+433445;["\043"]=245592+-245586;l=-362228-(-362255);H=291632-291581;D=217218-217163,a=-855191-(-855204),c=582014+-582002;["\051"]=-342415-(-342461),r=-230717-(-230774);s=29140+-29091,I=603773-603725;x=246004-245984;U=688284-688224;e=439824+-439814;w=16464-16425,h=-684333+684375,C=739274-739239,O=-730440-(-730440);f=-255137-(-255163),b=610926-610893,W=-886182-(-886205);i=-857636-(-857690),R=-808586-(-808622);J=-860603+860666,G=-838310-(-838348);B=-11670+11717,k=500809+-500759,L=-356094+356153,t=631703-631663,X=669743-669732;["\055"]=-973183-(-973202);v=-137670+137714;S=826629-826622;g=-581950+581953;["\049"]=-581861-(-581917);p=463136-463091;["\057"]=563911-563874;m=205590+-205560,o=439152+-439121;["\050"]=-996933+996947;["\047"]=-558355-(-558357);z=242895-242863}local y=math.floor local E=string.char for J=736701+-736700,#Y,725041+-725040 do local V=Y[J]if k(V)=="\115\116\114\105\110\103"then local k=S(V)local m={}local X=-332018-(-332019)local Z=671307-671307 local s=375292+-375292 while X<=k do local J=q(V,X,X)local Y=b[J]if Y then Z=Z+Y*(-146993+147057)^((513118-513115)-s)s=s+(1008089+-1008088)if s==-67520-(-67524)then s=204989+-204989 local J=y(Z/(911213-845677))local q=y((Z%(802714-737178))/(-710310-(-710566)))local k=Z%(-189604-(-189860))G(m,E(J,q,k))Z=-423750-(-423750)end elseif J=="\061"then G(m,E(y(Z/(24862+40674))))if X>=k or q(V,X+(-672772-(-672773)),X+(-36410+36411))~="\061"then G(m,E(y((Z%(1107819-1042283))/(-637138-(-637394)))))end break end X=X+(264957+-264956)end Y[J]=L(m)end end end return(function(J,Y,S,L,G,b,y,v,K,X,o,Z,m,t,V,E,l,D,s,k,P)K,E,Z,k,D,t,P,s,l,o,V,v,X,m=function(J,q)local Y=Z(q)local S=function(S,L,G,b,y)return k(J,{S;L,G,b;y},q,Y)end return S end,{},function(J)for q=-466591-(-466592),#J,832583+-832582 do V[J[q]]=V[J[q]]+(890005+-890004)end if S then local k=S(true)local Y=G(k)Y[q(-795153-(-730050))],Y[q(807304+-872408)],Y[q(49703-114830)]=J,s,function()return-353733+-2874229 end return k else return L({},{[q(210890+-275994)]=s;[q(-897468+832365)]=J;[q(724262+-789389)]=function()return-4153270-(-925308)end})end end,function(k,S,L,G)local Z,d,M,t,c,w,X,A,x,a,z,i,f,e,T,u,r,p,C,h,j,g,H,y,Q,U,n,F,I,V,s,B,N,O while k do if k<330392+7932095 then if k<510662+3877322 then if k<-964236+2522841 then if k<679997-(-45799)then if k<1021416-625263 then if k<848480+-538076 then if k<-663579-(-817073)then E[X]=T g=E[u]n=-348925+348926 F=g+n z=I[F]U=A+z z=-111561-(-111817)k=U%z A=k F=E[M]z=j+F k=490634+12382153 F=516920+-516664 U=z%F j=U else Z=Z+t O=not N X=Z<=s X=O and X O=Z>=s O=N and O X=O or X O=-575802+15448207 k=X and O X=-150878+16041210 k=k or X end else X=E[L[744644+-744642]]Z=E[L[-1034418+1034421]]V=X==Z k=-49424+13840848 y=V end else if k<1401668-968730 then z=344465+-344464 k=1022090-897298 U=I[z]T=U else k=true k=k and 5214850-(-487806)or 524583+10527888 end end else if k<785867-(-348865)then if k<829011+123490 then k=3623223-(-1013716)else y=12623809-(-722650)X=q(863194+-928299)Z=-497776+10636394 V=X^Z k=y-V V=k y=q(-782840+717707)k=y/V y={k}k=J[q(-804208+739099)]end else if k<1632437-180083 then X=E[L[1013498+-1013495]]e=-7332+7334 Z=-118617-(-118649)V=X%Z A=-351873-(-351886)s=E[L[956551-956547]]O=E[L[-311107-(-311109)]]C=E[L[844162+-844159]]f=C-V C=572368+-572336 k=-713761+10620465 j=f/C H=A-j r=e^H N=O/r t=s(N)s=-744619+4295711915 Z=t%s t=-298714+298716 r=-734426+734427 s=t^V X=Z/s s=E[L[-880155+880159]]O=X%r r=4294883917-(-83379)N=O*r t=s(N)s=E[L[-1048512-(-1048516)]]A=-694298-(-694554)N=s(X)O=-152619-(-218155)Z=t+N t=-3186-(-68722)s=Z%t N=Z-s t=N/O X=nil O=-253222-(-253478)N=s%O r=s-N V=nil e=179499-179243 O=r/e e=-1046627-(-1046883)Z=nil r=t%e s=nil H=t-r t=nil e=H/A H={N,O;r,e}O=nil E[L[-568864-(-568865)]]=H r=nil N=nil e=nil else y=301895+4539053 Z=112061-58667 X=q(994546+-1059681)V=X^Z k=y-V y=q(77745+-142869)V=k k=y/V y={k}k=J[q(221042-286154)]end end end else if k<2175950-(-703862)then if k<2610897-24909 then if k<3261767-789729 then if k<-406491+2504343 then O=nil s=nil k=8996670-(-984224)N=nil else E[X]=y k=12184096-(-688691)end else e=m()E[e]=y H=-127945+127948 A=396065+-396000 C=D(-693405+1678856,{})k=E[O]y=k(H,A)k=1027404+-1027404 A=k H=m()f=q(659302-724416)k=-716190+716190 j=k E[H]=y Q=q(-96115-(-30978))y=J[f]f={y(C)}y=357069+-357067 k={Y(f)}f=k k=f[y]C=k y=q(-481507+416361)k=J[y]d=E[Z]B=J[Q]Q=B(C)B=q(-144462-(-79313))p=d(Q,B)d={p()}y=k(Y(d))d=m()E[d]=y k=-779685+14745800 y=699592+-699591 p=E[H]B=p p=99377+-99376 Q=p p=-452030-(-452030)w=Q<p p=y-Q end else if k<-838853+3590371 then Z=q(-602450+537328)X=m()V=S k=true E[X]=k s=m()y=J[Z]Z=q(910277-975400)k=y[Z]Z=m()E[Z]=k k=P(-579824+11215407,{})E[s]=k O=q(308482+-373596)t=m()k=false E[t]=k N=J[O]r=K(5805806-603880,{t})O=N(r)k=O and 5416761-955722 or 4407546-942348 y=O else d=m()i=q(88220-153323)f=nil w=P(5583212-(-634326),{d;e;H,t})M={}O=nil z=nil C={}a=q(101170-166276)h=m()E[d]=C C=m()s=nil I=q(192955+-258083)t=v(t)E[C]=w w={}E[h]=w N=nil k=J[q(-343711-(-278577))]r=nil w=J[a]x=E[h]u={[i]=x,[I]=z}a=w(M,u)w=l(14663584-829714,{h,d,j;e;H;C})Z=a A=nil H=v(H)e=v(e)X=w d=v(d)C=v(C)H=q(504244+-569364)O=q(985906+-1051045)y={}A=-942904+31390325890129 j=v(j)t=q(-204343+139232)s=J[t]N=J[O]h=v(h)e=X(H,A)r=Z[e]e=q(-10134+-55002)X=nil e=N[e]O={e(N,r)}t=s(Y(O))Z=nil s=t()end end else if k<961343+2380238 then if k<4275321-996191 then k=E[L[386592-386585]]k=k and 643320+11171243 or-613913+11756149 else s=139640-139639 t=892945-892943 X=E[L[258941+-258940]]Z=X(s,t)X=-652145+652146 V=Z==X k=V and-31321+13822745 or 1039938-722456 y=V end else if k<3719710-42132 then O=q(-844684+779569)N=y y=J[O]O=q(382034+-447178)r=q(1026014+-1091145)k=y[O]O=m()E[O]=k y=J[r]j=q(754547+-819678)r=q(-402187+337055)k=y[r]H=k r=k A=J[j]e=A k=A and 5582475-(-547700)or 777859+12052036 else k=-27345+12718415 end end end end else if k<-177363+6545564 then if k<5554118-(-158448)then if k<4760490-(-130484)then if k<4695535-60569 then if k<908429+3553213 then N=E[t]y=N k=-1019808+4485006 else g=-975761+975763 k=-452355+11104244 F=I[g]g=E[x]z=F==g T=z end else k=true k=k and 6340473-(-125367)or-837551+9130711 end else if k<4958009-(-707679)then k=true y={}E[L[-214766+214767]]=k k=J[q(-743950-(-678824))]else k=13724157-1033087 end end else if k<6122266-390 then if k<7000701-1035949 then Q=q(-199838+134701)h=q(199145+-264274)k=J[Q]w=J[h]Q=k(w)k=q(-67650-(-2512))J[k]=Q k=535417+3309611 else w=#f d=-245191+245192 C=s(d,w)d=N(f,C)M=15659+-15658 w=E[j]C=nil a=d-M k=9111475-(-462530)h=O(a)w[d]=h d=nil end else if k<5663683-(-497102)then f=q(-691884-(-626753))j=J[f]f=q(-786337+721189)k=12997331-167436 A=j[f]e=A else V=E[L[601518-601517]]y=#V V=-525977-(-525977)k=y==V k=k and-1024178+14292772 or 305821+9600883 end end end else if k<6917213-(-55680)then if k<-590729+7346457 then if k<260577+6426554 then if k<6462849-(-128208)then V=q(-35945+-29184)y=q(-696882-(-631744))k=J[y]y=J[V]V=q(78566+-143695)J[V]=k V=q(189712-254850)J[V]=y V=E[L[850248+-850247]]k=4980465-343526 X=V()else Z=-731253-(-731254)X=E[L[116435+-116432]]V=X~=Z k=V and-34493+1218110 or 10441+6757375 end else C=d M=C f[C]=M k=16357843-701736 C=nil end else if k<432860+6371220 then Z=275125-275070 X=E[L[-706939-(-706942)]]V=X*Z X=955394+-955137 y=V%X k=736914+5914892 E[L[-898920-(-898923)]]=y else w=q(-33525-31613)k=J[w]w=q(192684-257813)J[w]=k k=4102766-257738 end end else if k<313808+7435225 then if k<1007187+6489154 then r=H Q=q(11466+-76588)B=J[Q]Q=q(768539+-833647)p=B[Q]B=p(V,r)p=E[L[-800528+800534]]Q=p()d=B+Q C=d+N d=-527870+528126 k=16607091-(-122706)r=nil Q=-33429+33430 f=C%d d=Z[X]N=f B=N+Q p=s[B]C=d..p Z[X]=C else B=E[X]p=B k=B and 989281+6939229 or-369387+11944530 end else if k<-994817+9193673 then k=842214+10732929 B=A==j p=B else k=true k=10483121-(-569350)end end end end end else if k<-937983+12953655 then if k<10331199-276586 then if k<-877493+10444422 then if k<854608+8016790 then if k<9695189-1035793 then if k<-1034457+9481024 then k=J[q(-890374-(-825227))]y={}else H=q(-919083+853935)e=J[H]y=e k=3445492-972345 end else y={}k=J[q(127086-192203)]end else if k<8396668-(-568371)then T=E[X]k=T and-687674+14739429 or 2656023-334084 y=T else a=q(-321586-(-256471))h=m()E[h]=p x=913081-913080 y=J[a]I=820006+-820004 a=q(-301078+235934)k=y[a]M=-29239+29339 a=459709+-459708 y=k(a,M)a=m()E[a]=y M=481642+-481642 n=202959-202959 k=E[O]u=-435006-(-435261)z=q(-35357+-29780)y=k(M,u)M=m()u=-115315-(-115316)E[M]=y k=E[O]i=E[a]y=k(u,i)c=-248843-(-258843)u=m()E[u]=y y=E[O]i=y(x,I)y=406865-406864 k=i==y y=q(776430-841579)i=m()I=q(-1059776-(-994658))E[i]=k U=J[z]F=E[O]g={F(n,c)}k=q(-716013+650872)k=C[k]z=U(Y(g))U=q(-1014444-(-949326))T=z..U x=I..T I=q(-903524-(-838410))k=k(C,y,x)x=m()E[x]=k y=J[I]T=P(2301053-(-980608),{O;h,H,Z,X;d,i;x;a;u,M;e})I={y(T)}k={Y(I)}I=k k=E[i]k=k and-607323+9479271 or 13036087-284633 end end else if k<857015+9030886 then if k<521277+9135458 then w=336413-336413 d=#f C=d==w k=C and 2035394-(-766173)or 6691848-590192 else k=11504392-(-434964)end else if k<853311+9081225 then Z=q(1010650+-1075781)X=J[Z]Z=q(-535615+470502)V=X[Z]Z=E[L[650307+-650306]]k=J[q(613789-678929)]X={V(Z)}y={Y(X)}else k=J[q(850017+-915124)]y={X}end end end else if k<11752710-601558 then if k<-657623+11383744 then if k<10994538-353682 then if k<456543+9979351 then Q=655113+-655112 k=E[O]w=-580899+580905 B=k(Q,w)k=q(192531+-257669)J[k]=B w=q(-300791+235653)Q=J[w]w=24789+-24787 k=Q>w k=k and-789618+6503605 or 6800616-(-116868)else y=q(-796310+731168)k=J[y]V=q(433367-498492)y=k(V)y={}k=J[q(253873-318989)]end else y=T k=U k=1396575-(-925364)end else if k<12096683-973110 then k=o(696461+252532,{s})B={k()}k=J[q(940515+-1005636)]y={Y(B)}else k={}X=914635-914634 Z=E[L[-416835-(-416844)]]s=Z Z=-695436+695437 t=Z V=k Z=-175795-(-175795)N=t<Z k=-320740+613364 Z=X-t end end else if k<1030233+10597849 then if k<-61429+11636776 then E[X]=p k=E[X]k=k and 387569+9282763 or 868962+7352172 else w=31952-31952 d=#f k=5382171-(-719485)C=d==w end else if k<1005491+10883087 then Z=835115-835115 V=q(104075-169217)k=J[V]X=E[L[-994919+994927]]V=k(X,Z)k=698039+10444197 else H=v(H)X=v(X)C=nil r=nil e=v(e)f=nil N=nil A=nil H=m()N=q(945865+-1010980)d=v(d)X=nil e=q(-800292-(-735170))f={}O=v(O)t=v(t)Z=v(Z)Z=nil s=v(s)j=nil C=622301-622300 t=J[N]N=q(615823+-680933)s=t[N]j=m()O=q(-230537-(-165422))t=m()E[t]=s N=J[O]A={}O=q(595101+-660245)s=N[O]r=q(189120-254251)O=J[r]r=q(593939-659052)N=O[r]r=J[e]e=q(118384+-183529)O=r[e]e=m()r=203893+-203893 E[e]=r r=-307256+307258 E[H]=r r={}E[j]=A d=443269+-443013 A=694354-694354 w=d d=754001+-754000 h=d d=27764-27764 k=675711+14980396 a=h<d d=C-h end end end end else if k<14662443-862465 then if k<573259+12253149 then if k<13588185-890562 then if k<883595+11804467 then if k<1030488+11365714 then k=-51824+14105661 Z=E[L[-716278+716284]]X=Z==V y=X else O=596249-595994 k={}E[L[-831236-(-831238)]]=k y=E[L[-340581+340584]]t=387112+35184371701720 s=y y=X%t r=q(-682209+617087)E[L[1019601-1019597]]=y N=X%O O=299668-299666 t=N+O E[L[349313-349308]]=t O=J[r]r=q(-38944+-26175)H=874859+-874858 N=O[r]O=N(V)A=H N=q(-886884-(-821741))H=-892415-(-892415)Z[X]=N r=-1040117-(-1040118)j=A<H N=511279+-511126 k=16579507-(-150290)H=r-A e=O end else k=true k=k and 10871572-711143 or-775229+9618668 end else if k<-31726+12760013 then k=344590+9636304 else U=E[X]k=U and 282934-(-149973)or 479098-354306 T=U end end else if k<314535+12641080 then if k<13213526-354905 then k=H y=e k=e and-571549+3044696 or 8649083-178816 else h=v(h)i=v(i)I=nil M=v(M)k=14777941-811826 u=v(u)x=v(x)a=v(a)end else if k<-644526+13952118 then X=E[L[609675+-609673]]Z=-170335-(-170476)V=X*Z X=25001984305008-145911 y=V+X X=460718-460717 V=35184372428128-339296 k=y%V E[L[507469-507467]]=k k=7475731-707915 V=E[L[125036-125033]]y=V~=X else k=y and-594723+16071277 or-934038+4166829 end end end else if k<999758+14145455 then if k<874420+13177714 then if k<646600+13346423 then if k<14003807-120289 then k=E[L[-405858+405859]]Z=k X=S[60331-60329]k=Z[X]k=k and-541282+13254043 or 12948669-277440 V=S[106127+-106126]else h=not w p=p+Q y=p<=B y=h and y h=p>=B h=w and h y=h or y h=10187589-741497 k=y and h y=214648+7345974 k=k or y end else U=k g=847960+-847959 F=I[g]g=false z=F==g T=z k=z and 4256507-(-370512)or 122227+10529662 end else if k<14111046-(-277776)then E[L[-678660+678665]]=y V=nil k=560638+2672153 else k=E[L[-219706-(-219707)]]r=-173533+173533 e=-239876+240131 X=Z O=k(r,e)V[X]=O k=-281016+573640 X=nil end end else if k<16355206-529333 then if k<16393703-859674 then r=q(690567+-755681)e=K(2168252-693005,{})s=q(-768684-(-703547))y=q(-107074+41928)k=J[y]V=E[L[-138763-(-138767)]]Z=J[s]O=J[r]r={O(e)}N={Y(r)}O=-134012+134014 t=N[O]s=Z(t)Z=q(-559975-(-494826))X=V(s,Z)V={X()}y=k(Y(V))V=y X=E[L[-1018697-(-1018702)]]k=X and 305187+11969802 or 13553342-(-500495)y=X else M=not a d=d+h C=d<=w C=M and C M=d>=w M=a and M C=M or C M=6696864-(-52038)k=C and M C=-608955+12191029 k=k or C end else if k<15770109-(-447550)then k=E[L[-354652-(-354662)]]X=E[L[889233+-889222]]V[k]=X k=E[L[655830+-655818]]X={k(V)}y={Y(X)}k=J[q(-306545+241415)]else f=not j H=H+A r=H<=e r=f and r f=H>=e f=j and f r=f or r f=-517005+7993091 k=r and f r=3026009-988808 k=k or r end end end end end end end k=#G return Y(y)end,function(J,q)local Y=Z(q)local S=function(S)return k(J,{S},q,Y)end return S end,function(J,q)local Y=Z(q)local S=function(...)return k(J,{...},q,Y)end return S end,function(J,q)local Y=Z(q)local S=function(S,L)return k(J,{S,L},q,Y)end return S end,function(J)local q,k=265392+-265391,J[-878740-(-878741)]while k do V[k],q=V[k]-(-184917-(-184918)),(882730-882729)+q if 412985+-412985==V[k]then V[k],E[k]=nil,nil end k=J[q]end end,function(J,q)local Y=Z(q)local S=function(S,L,G,b,y,E,V)return k(J,{S;L;G;b;y,E,V},q,Y)end return S end,function(J,q)local Y=Z(q)local S=function(S,L,G,b)return k(J,{S;L;G,b},q,Y)end return S end,{},function(J)V[J]=V[J]-(1041101-1041100)if V[J]==-1014023+1014023 then V[J],E[J]=nil,nil end end,264453+-264453,function()X=(-765688+765689)+X V[X]=736135+-736134 return X end return(t(-614955+3360903,{}))(Y(y))end)(getfenv and getfenv()or _ENV,unpack or table[q(874029+-939177)],newproxy,setmetatable,getmetatable,select,{...})end)(...)
